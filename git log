@@ -1,0 +1,29 @@
+[33mcommit db3b43a707a2ffc643badfafc94ea0fcd80c41dc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Jose Malafaia Code <jose.malafaiacode@outlook.com>
+Date:   Sat Sep 26 14:26:27 2020 -0300
+
+    .gitignore vazio
+
+ .gitignore | 1 [31m-[m
+ 1 file changed, 1 deletion(-)
+
+[33mcommit 447567f0a876ba0e4ee19045860085343accff09[m
+Author: Jose Malafaia Code <jose.malafaiacode@outlook.com>
+Date:   Sat Sep 26 14:14:08 2020 -0300
+
+    gitignore change
+
+ .gitignore | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+
+[33mcommit 944bc75fa8c55f957cc834bf75addda37ffb7b14[m
+Author: Jose Malafaia Code <jose.malafaiacode@outlook.com>
+Date:   Sat Sep 26 14:11:26 2020 -0300
+
+    Primeiro Commit
+
+ .gitignore                | 0
+ _MySQL/siteGamesQuery.sql | 0
+ _css/estilo.css           | 0
+ _html/index.html          | 0
+ 4 files changed, 0 insertions(+), 0 deletions(-)
