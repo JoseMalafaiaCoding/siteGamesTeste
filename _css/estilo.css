@@ -1,0 +1,103 @@
+@charset "utf-8";
+@font-face{
+    font-family: 'slim-play-font';
+    src: url('../_fonts/SlimPlay-D1gR.ttf');
+}
+
+body{
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    background-color: #b1b1b1;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Formatação do corpo da página*/
+
+div#corpo{
+    width: 1100px;
+    box-shadow: 1px 1px 4px black;
+    background-color: white;
+    display: block;
+    margin: -20px auto 0px auto;
+    padding: 10px;
+}
+
+/*Formatação do cabeçalho*/
+
+header#cabecalho{
+    height: 150px;
+    border-bottom: 1px black solid;
+    margin-bottom: 5px;
+    background: url("../_imagens/ps5-logo-med.jpg") no-repeat 550px -24px;
+    font-family: slim-play-font, sans-serif;
+}
+
+header#cabecalho h1{
+    font-size: 25pt;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+header#cabecalho h2{
+    margin-left: 40px;
+}
+
+
+/*Formatação da interface*/
+
+div#interface{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+/*Formatação do menu lateral*/
+
+
+nav#menuLateral{
+    display: block;
+    margin-left: -20px;
+    width: 200px;
+    border-right: 1px black solid;
+    padding-right: 5px;
+}
+
+nav#menuLateral ul li{
+    background-color: #b1b1b1;
+    margin-bottom: 5px;
+    padding: 3px;
+    list-style: none;
+}
+
+/*Formatação do conteúdo da pagina principal*/
+
+section#secaoPrincipal article{
+    display: flex;
+    background-color: black;
+    height: 230px;
+    width: 218px;
+    margin: 10px auto 3px 5px;
+    border-radius: 8px;
+}
+
+section.legendaArticle{
+    overflow: hidden;
+    border: 0px;
+}
+
+section.legendaArticle::-webkit-scrollbar-track{
+    display: none;
+}
+
+/*Formatação do rodapé*/
+
+footer#rodape{
+    margin-top: 10px;
+    padding-top: 10px;
+    clear: both;
+    text-align: center;
+    border-top: 1px black solid;
+}

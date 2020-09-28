@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+body{
+    text-align: justify;
+}
+
+article{
+    height: 230px;
+    width: auto;
+}
+
+article h1{
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    background-color: #e2e5ec;
+    padding: 2px;
+    margin: 0px;
+}
+
+article h2 {
+    font-size: 13pt;
+    color: #888888;
+    margin: 0px;
+}
