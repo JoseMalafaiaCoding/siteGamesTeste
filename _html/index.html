@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../_css/estilo.css">
 </head>
 
+<script>
+    function mostraIframeArtigo(frameLink) {
+        document.getElementsByClassName("linkArtigo").href = frameLink;
+    }
+</script>
 
 <body>
     <div id="corpo">
@@ -27,11 +32,29 @@
             </nav>
 
             <section id="secaoPrincipal">
-                <article><img src="../_imagens/ps5-digital-edition.jpg" alt=""><iframe class="legendaArticle" src="iframe-index.html" title="" scrolling="no"></iframe></article>
-                <article></article>
+                <article><a class="linkArtigo" href="iframe-index.html#artigoPSDigital" target="framePSDigital"><img
+                            src="../_imagens/ps5-digital-edition.jpg" alt=""></a><iframe class="legendaArticle"
+                        src="iframe-index.html" title="" scrolling="no" name="framePSDigital" frameborder="0"></iframe>
+                </article>
+                <article><a class="linkArtigo" href="iframe-index.html#artigoPSPadrao" target="framePSPadrao"><img
+                            src="../_imagens/ps5-standard.jpg" alt=""></a><iframe class="legendaArticle"
+                        src="iframe-index.html" title="" scrolling="no" name="framePSPadrao" frameborder="0"></iframe>
+                </article>
             </section>
 
         </div>
+        <section id="secaoSecundaria">
+            <div class="conteudoSecaoSecundaria">
+                <article><img src="../_imagens/ps4-slim.jpg" alt="">
+                    <h2>Saiba das últimas novidades do PS4</h2>
+                </article>
+                <article></article>
+            </div>
+            <div class="conteudoSecaoSecundaria">
+                <article></article>
+            </div>
+            
+        </section>
         <footer id="rodape">Rodapé</footer>
     </div>
 </body>

@@ -2,11 +2,13 @@
 
 body{
     text-align: justify;
+    font-family: Arial, sans-serif;
 }
 
 article{
     height: 230px;
     width: auto;
+    margin-bottom: 800px;
 }
 
 article h1{

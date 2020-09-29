@@ -7,7 +7,7 @@
 body{
     text-align: justify;
     font-family: Arial, sans-serif;
-    background-color: #b1b1b1;
+    background-color: #dde0e7;
 }
 
 a{
@@ -18,7 +18,7 @@ a{
 
 div#corpo{
     width: 1100px;
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 5px 5px 8px #026cd9;
     background-color: white;
     display: block;
     margin: -20px auto 0px auto;
@@ -52,14 +52,15 @@ div#interface{
     display: flex;
     width: 100%;
     flex-direction: row;
+    border-bottom: 1px black solid;
 }
 
 /*Formatação do menu lateral*/
 
-
 nav#menuLateral{
     display: block;
     margin-left: -20px;
+    margin-right: 10px;
     width: 200px;
     border-right: 1px black solid;
     padding-right: 5px;
@@ -83,13 +84,44 @@ section#secaoPrincipal article{
     border-radius: 8px;
 }
 
+section#secaoPrincipal article img{
+    border-radius: 8px;
+}
+
 section.legendaArticle{
     overflow: hidden;
     border: 0px;
+    display: none;
+    opacity: 0;
 }
 
-section.legendaArticle::-webkit-scrollbar-track{
-    display: none;
+/*Formatação das noticias secundarias*/
+
+section#secaoSecundaria{
+    display: flex;
+}
+
+section#secaoSecundaria div{
+    display: block;
+}
+
+section#secaoSecundaria div article{
+    display: flex;
+    background-color: grey;
+    border-radius: 8px;
+    margin: 30px 100px 70px 30px;
+    width: 400px;
+    height: 130px;
+}
+
+section#secaoSecundaria div article img{
+    margin-right: 5px;
+}
+
+section#secaoSecundaria div article h2{
+    font-size: 13pt;
+    margin-right: 5px;
+    text-align: center;
 }
 
 /*Formatação do rodapé*/
