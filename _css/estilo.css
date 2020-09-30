@@ -101,26 +101,37 @@ section#secaoSecundaria{
     display: flex;
 }
 
-section#secaoSecundaria div{
+div.conteudoSecaoSecindaria{
     display: block;
 }
 
-section#secaoSecundaria div article{
+div.conteudoSecaoSecundaria article{
     display: flex;
-    background-color: grey;
     border-radius: 8px;
     margin: 30px 100px 70px 30px;
     width: 400px;
     height: 130px;
 }
 
-section#secaoSecundaria div article img{
+article.artigoSecaoSecundaria img{
     margin-right: 5px;
+    border-radius: 8px;
 }
 
-section#secaoSecundaria div article h2{
+article.artigoSecaoSecundaria h2{
     font-size: 13pt;
     margin-right: 5px;
+    text-align: center;
+    background-color:  #dde0e7;
+    flex-direction: column;
+}
+
+article.artigoSecaoSecundaria div{
+    display: block;
+}
+
+article.artigoSecaoSecundaria h3{
+    font-size: medium;
     text-align: center;
 }
 

@@ -7,12 +7,6 @@
     <link rel="stylesheet" href="../_css/estilo.css">
 </head>
 
-<script>
-    function mostraIframeArtigo(frameLink) {
-        document.getElementsByClassName("linkArtigo").href = frameLink;
-    }
-</script>
-
 <body>
     <div id="corpo">
         <header id="cabecalho">
@@ -45,15 +39,25 @@
         </div>
         <section id="secaoSecundaria">
             <div class="conteudoSecaoSecundaria">
-                <article><img src="../_imagens/ps4-slim.jpg" alt="">
-                    <h2>Saiba das últimas novidades do PS4</h2>
+                <article class="artigoSecaoSecundaria"><img src="../_imagens/ps4-slim.jpg" alt="">
+                    <div>
+                        <h2>Saiba das últimas novidades do PS4</h2>
+                        <h3>O console da geração atual ainda tem muito a oferecer</h3>
+                    </div>
                 </article>
-                <article></article>
+                <article class="artigoSecaoSecundaria">
+                    <img src="../_imagens/psplus-logo.jpg" alt="">
+                    <div>
+                        <h2>Playstation Plus</h2>
+                        <h3>Quais foram os jogos adicionados na plus este mês</h3>
+                    </div>
+                </article>
             </div>
             <div class="conteudoSecaoSecundaria">
-                <article></article>
+                <article class="artigoSecaoSecundaria">
+                </article>
             </div>
-            
+
         </section>
         <footer id="rodape">Rodapé</footer>
     </div>
