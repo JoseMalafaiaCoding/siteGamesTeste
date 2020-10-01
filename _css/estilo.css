@@ -58,7 +58,6 @@ div#interface{
 /*Formatação do menu lateral*/
 
 nav#menuLateral{
-    display: block;
     margin-left: -20px;
     margin-right: 10px;
     width: 200px;
@@ -67,10 +66,31 @@ nav#menuLateral{
 }
 
 nav#menuLateral ul li{
+    position: relative;
     background-color: #b1b1b1;
-    margin-bottom: 5px;
     padding: 3px;
     list-style: none;
+}
+
+ul.subMenu{
+    position: absolute;
+    left: 140px;
+    top: 0;
+    width: 250px;
+    display: none;
+}
+
+ul.menuPrincipal li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+
+
+ul.menuPrincipal li:hover ul{
+    display: block;
 }
 
 /*Formatação do conteúdo da pagina principal*/
