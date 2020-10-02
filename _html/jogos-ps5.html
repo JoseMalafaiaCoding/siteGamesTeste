@@ -5,16 +5,18 @@
     <title>PS5 News</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../_css/estilo.css">
+    <link rel="stylesheet" href="../_css/cover-album.css">
 </head>
 
 <body>
     <div id="corpo">
+        <!--Area do cabecalho-->
         <header id="cabecalho">
             <h1>Playstation 5</h1>
             <h2>A new state of play</h2>
         </header>
         <div id="interface">
-            
+            <!--Area do menu lateral-->
             <nav id="menuLateral">
                 <ul class="menuPrincipal">
                     <li><a href="index.html">Home</a></li>
@@ -30,29 +32,28 @@
                     </li>
                 </ul>
             </nav>
-
+            <!--Area do conteúdo principal da página-->
             <section id="secaoPrincipal">
-                <article><a class="linkArtigo" href="iframe-index.html#artigoPSDigital" target="framePSDigital"><img
-                            src="../_imagens/ps5-digital-edition.jpg" alt=""></a><iframe class="legendaArticle"
-                        src="iframe-index.html" title="" scrolling="no" name="framePSDigital" frameborder="0"></iframe>
-                </article>
-                <article><a class="linkArtigo" href="iframe-index.html#artigoPSPadrao" target="framePSPadrao"><img
-                            src="../_imagens/ps5-standard.jpg" alt=""></a><iframe class="legendaArticle"
-                        src="iframe-index.html" title="" scrolling="no" name="framePSPadrao" frameborder="0"></iframe>
-                </article>
+                <ul id="album-capas">
+                    <li id="cover-demons"><span>Demon's Souls: Remastered</span></li>
+                    <li id="cover-re"><span>Resident Evil: Village</span></li>
+                    <li id="cover-hogwarts"><span>Hogwarts Legacy</span></li>
+                    <li id="cover-ffxvi"><span>Final Fantasy XVI</span></li>
+                </ul>
             </section>
-
+            
         </div>
+        <!--Area da seção secundária-->
         <section id="secaoSecundaria">
             <div class="conteudoSecaoSecundaria">
-                <article class="artigoSecaoSecundaria"><img src="../_imagens/ps4-slim.jpg" alt="">
+                <article class="artigoSecaoSecundaria"><img src="../_imagensIndex/ps4-slim.jpg" alt="">
                     <div>
                         <h2>Saiba das últimas novidades do PS4</h2>
                         <h3>O console da geração atual ainda tem muito a oferecer</h3>
                     </div>
                 </article>
                 <article class="artigoSecaoSecundaria">
-                    <img src="../_imagens/psplus-logo.jpg" alt="">
+                    <img src="../_imagensIndex/psplus-logo.jpg" alt="">
                     <div>
                         <h2>Playstation Plus</h2>
                         <h3>Veja quais foram os jogos adicionados na plus este mês</h3>
@@ -65,6 +66,7 @@
             </div>
 
         </section>
+        <!--Area do Rodapé-->
         <footer id="rodape">Rodapé</footer>
     </div>
 </body>
