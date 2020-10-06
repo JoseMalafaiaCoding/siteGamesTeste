@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>PS5 News</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../_css/estilo.css">
+    <link rel="stylesheet" href="../_css/formulario.css">
+</head>
+<script src="../_javascript/functions.js"></script>
+<script src="../_javascript/functionsForm.js"></script>
+<body>
+    <div id="corpo">
+
+        <header id="cabecalho">
+            <h1>Playstation 5</h1>
+            <h2>A new state of play</h2>
+        </header>
+        <div id="interface">
+            <button id="botaoMenu">Mostrar menu</button>
+            <nav id="menuLateral">
+
+                <ul class="menuPrincipal">
+                    <li><a href="index.html">Home</a></li>
+                    <li id="menuHardware"><a href="">Hardware</a></li>
+                    <li id="menuControle"><a href="">Controle</a></li>
+                    <li id="menuJogos"><a href="jogos-ps5.html">Jogos</a>
+                        <ul class="subMenu">
+                            <li><a href="">Resident Evil: Village</a></li>
+                            <li><a href="">Demons's Souls: Remastered</a></li>
+                            <li><a href="">Hogwarts Legacy</a></li>
+                            <li><a href="">Final Fantasy XVI</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="secaoPrincipal">
+                <form action="mailto:juninhomalafaia@hotmail.com">
+                    <fieldset id="dadosUser">
+                        <legend>Dados do usuário</legend>
+                        
+                        <p>
+                            <label for="idNome">Nome: </label>
+                            <input name="txtNome" id="idNome" type="text" placeholder="Digite seu nome completo"
+                                maxlength="100" max="20">
+                        </p>
+
+                        <p>
+                            <label for="idNasc">Data de nascimento: </label>
+                            <input type="date" name="txtNasc" id="idNasc">
+                        </p>
+                        <p>
+                            <label for="idEmail">Email: </label><input type="email" name="txtEmail" id="idEmail" placeholder="@exemplo.com.br">
+                        </p>
+                        <p>
+                            <fieldset id="sexo">
+                                <legend>Sexo</legend>
+                                <input name="txtSexo" id="idMasc" type="radio" checked><label for="idMasc">Masculino</label> </br>
+                                <input type="radio" name="txtSexo" id="idFem"><label for="idFem">Feminino</label>
+                            </fieldset>
+                        </p>
+                    </fieldset>
+                    <fieldset id="endereco">
+                        <legend>Endereço</legend>
+                        <p>
+                            <label for="idRua">Rua: </label><input type="text" name="txtRua" id="idRua" placeholder="rua, av, etc.">
+                        </p>
+                        <p>
+                            <label for="idNum">Número: </label><input type="number" name="txtNum" id="idNum" max="9999" min="0" placeholder="Número da sua casa ou condomínio">
+                        </p>
+                        <p>
+                            <label for="idBairro">Bairro: </label><input type="text" name="txtBairro" id="idBairro">
+                        </p>
+                        <p>
+                            <label for="idCidade">Cidade</label>
+                            <select name="txtCidade" id="idCidade">
+                                <optgroup label="Paraíba">
+                                    <option selected>João Pessoa</option>
+                                    <option>Cabedelo</option>
+                                    <option>Lucena</option>
+                                    <option>Campina Grande</option>
+                                </optgroup>
+                                <optgroup label="São Paulo">
+                                    <option selected>São Paulo</option>
+                                    <option>São Bernanrdo</option>
+                                    <option>São Caetano</option>
+                                    <option>Santos</option>
+                                    <option>Praia Grande</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <label for="idEstado">Estado: </label>
+                        <select name="txtEstado" id="idEstado">
+                                <optgroup label="Nordeste">
+                                    <option value="PB">Paraíba</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="CE">Ceará</option>
+                                </optgroup>
+                                <optgroup label="Norte">
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RO">Roraima</option>
+                                    <option value="AC">Acre</option>
+                                </optgroup>
+                        </select>
+                    </fieldset>
+                    <fieldset id="produto">
+                        <legend>Produto</legend>
+                        <fieldset id="modelo" >
+                            <legend>Modelo</legend>
+                            <div id="imagemModelo">
+                                <img src="../_imagens-form-compra/ps5-standard.png" alt="Imagem indisponível">
+                            </div>
+                            <p>
+                                <input type="radio" value="standard" name="txtModelo" id="idStandard" onclick="calcularPreco('standard');mudarImagemProduto('standard');" checked><label for="idStandard">Playstation 5 Standard</label>
+                            </p>
+                            <p>
+                                <input type="radio" value="digital" name="txtModelo" id="idDigital" onclick="calcularPreco('digital');mudarImagemProduto('digital');"><label for="idDigital">Playstation 5 Digital Edition</label>
+                            </p>
+                        </fieldset>
+                        <p>
+                            <label for="idQtd">Quantidade:</label>
+                            <input type="number" name="txtQtd" id="idQtd" value="1" min="1">
+                        </p>
+                        <p>
+                            <label for="idPreco">Preço: </label>
+                            <input type="number" name="txtPreco" id="idPreco" value="5000" readonly>
+                        </p>
+                    </fieldset>
+                    <fieldset id="dadosCartao">
+                        <legend>Dados bancários</legend>
+                    </fieldset>
+                </form>
+            </section>
+
+        </div>
+        <section id="secaoSecundaria">
+            <div class="conteudoSecaoSecundaria">
+                <article class="artigoSecaoSecundaria"><img src="../_imagensIndex/ps4-slim.jpg" alt="">
+                    <div>
+                        <h2>Saiba das últimas novidades do PS4</h2>
+                        <h3>O console da geração atual ainda tem muito a oferecer</h3>
+                    </div>
+                </article>
+                <article class="artigoSecaoSecundaria">
+                    <img src="../_imagensIndex/psplus-logo.jpg" alt="">
+                    <div>
+                        <h2>Playstation Plus</h2>
+                        <h3>Veja quais foram os jogos adicionados na plus este mês</h3>
+                    </div>
+                </article>
+            </div>
+            <div class="conteudoSecaoSecundaria">
+                <article class="artigoSecaoSecundaria">
+                </article>
+            </div>
+
+        </section>
+        <footer id="rodape">Rodapé</footer>
+    </div>
+</body>
+
+</html>

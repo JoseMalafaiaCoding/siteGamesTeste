@@ -51,6 +51,7 @@ header#cabecalho h2{
 div#interface{
     display: flex;
     width: 100%;
+    padding-bottom: 20px;
     flex-direction: row;
     border-bottom: 1px black solid;
 }
@@ -113,14 +114,13 @@ ul.menuPrincipal li:hover ul{
 
 section#secaoPrincipal{
     display: block;
-    width: 1000px;
+    width: 100%;
 }
 
 section#secaoPrincipal article{
     display: flex;
-    background-color: black;
     height: 230px;
-    width: 218px;
+    width: 100%;
     margin: 10px auto 3px 5px;
     border-radius: 8px;
 }

@@ -12,9 +12,7 @@ window.onload = function () {
             botaoMenu.innerText = "Mostrar menu";
         }
     }
-
     var figuraHardware = document.getElementsByClassName('figuraHardware');
-
     for (var i = 0; i < figuraHardware.length; i++) {
         figuraHardware[i].addEventListener('mouseenter', escurecerFundo);
         function escurecerFundo() { //Escurece a pagina ao entrar com o mouse em uma figura
