@@ -5,8 +5,10 @@
     <title>PS5 News</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../_css/estilo.css">
+    <link rel="stylesheet" href="../_css/hardware-ps5.css">
 </head>
 <script src="../_javascript/functions.js"></script>
+<script src="../_javascript/functionsHardware.js"></script>
 
 <body>
     <div id="corpo">
@@ -78,9 +80,36 @@
                         <p>Controle do PS5 apresenta funções inovadoras</p>
                     </figcaption>
                 </figure>
-
+                <div id="divSpec">
+                    <h1>Especificações detalhadas do PS5</h1>
+                    <table id="tabelaSpec">
+                        <caption>Especificações técnicas do PS5 <span>07/10/2020</span></caption>
+                        <tr>
+                            <th id="headComponente" class="headCol" scope="col">Componente</th>
+                            <th id="headSpec" class="headCol" scope="col">Especificação</th>
+                        </tr>    
+                        <tr>
+                            <td id="imgComponente" rowspan="6"><img id="imgSpec" src="../_imagensPS5Hardware/cpu-minimalista.jpg" alt=""></td>
+                            <td id="cpuSpec" class="tdDir" onmouseover="mudarImagemTabela('cpu');">8x Zen 2 Cores a 3,5 GHz (frequência variável)</td>
+                        </tr>
+                        <tr>
+                            <td id="gpuSpec" class="tdDir" onmouseover="mudarImagemTabela('gpu');">RDNA 2 personalizado - 10,28 TFLOPs, 36 CUs a 2,23 GHz (frequência variável)</td>
+                        </tr>
+                        <tr>
+                            <td id="ramSpec" class="tdDir" onmouseover="mudarImagemTabela('ram');">16 GB GDDR6 / RAM de 256 bits, 448 GB/s</td>
+                        </tr>
+                        <tr>
+                            <td id="ssdSpec" class="tdDir" onmouseover="mudarImagemTabela('ssd');">SSD de 825 GB personalizado</td>
+                        </tr>
+                        <tr>
+                            <td id="slotSpec" class="tdDir" onmouseover="mudarImagemTabela('slot');">slot NVMe SSD, suporte USB HDD</td>
+                        </tr>
+                        <tr>
+                            <td id="driveSpec" class="tdDir" onmouseover="mudarImagemTabela('drive');">4K Ultra HD Blu-ray</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
-
         </div>
         <section id="secaoSecundaria">
             <div class="conteudoSecaoSecundaria">

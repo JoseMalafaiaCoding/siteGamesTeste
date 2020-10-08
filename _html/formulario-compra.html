@@ -22,7 +22,7 @@
 
                 <ul class="menuPrincipal">
                     <li><a href="index.html">Home</a></li>
-                    <li id="menuHardware"><a href="">Hardware</a></li>
+                    <li id="menuHardware"><a href="hardware-ps5.html">Hardware</a></li>
                     <li id="menuControle"><a href="">Controle</a></li>
                     <li id="menuJogos"><a href="jogos-ps5.html">Jogos</a>
                         <ul class="subMenu">
@@ -132,10 +132,25 @@
                     </fieldset>
                     <fieldset id="dadosCartao">
                         <legend>Dados bancários</legend>
+                        <p>
+                            <label for="idnumCartao">Número do cartão</label>
+                            <input type="text" name="txtnumCartao" id="idnumCartao" placeholder="0000.0000.0000.0000" maxlength="19">
+                            <select name="txtBandeira" id="idBandeira">
+                                <option>Visa</option>
+                                <option>Master Card</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="idcodSeg">Codigo de segurança</label>
+                            <input type="number" name="txtcodSeg" id="idcodSeg" placeholder="000" maxlength="3">
+                        </p>
+                        <p>
+                            <label for="">Validade</label>
+                            <input type="month" name="txtVal" id="idVal">
+                        </p>
                     </fieldset>
                 </form>
             </section>
-
         </div>
         <section id="secaoSecundaria">
             <div class="conteudoSecaoSecundaria">
